@@ -19,7 +19,7 @@ girisler=np.array(veri_copy.drop(["satis "],axis=1))
 cikis=np.array(veri_copy["satis "])
 
 from sklearn.model_selection import train_test_split
-giris_egitim, giris_test, satis_egitim, satis_test = train_test_split(girisler,cikis, test_size=0.2ç,random_state=109)
+giris_egitim, giris_test, satis_egitim, satis_test = train_test_split(girisler,cikis, test_size=0.2,random_state=109)
 
 
 from sklearn.naive_bayes import CategoricalNB
